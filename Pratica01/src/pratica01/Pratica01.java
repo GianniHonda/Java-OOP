@@ -7,6 +7,7 @@ public class Pratica01 {
        c1.numeroDePag = 100;
        c1.tamanho = 25;
        c1.tipo = "De dezenho";
+       c1.aberto = true;
        c1.status();
        c1.abrir();
        c1.usar();
