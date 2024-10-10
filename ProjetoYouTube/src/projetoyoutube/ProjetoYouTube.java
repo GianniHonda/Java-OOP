@@ -10,7 +10,14 @@ public class ProjetoYouTube {
         g[0] = new Gafanhoto("Jubileu", 22, "M", "juba");
         g[1] = new Gafanhoto("Creuza", 12, "F", "creuzita");
         
-        System.out.println(v[0].toString());
-        System.out.println(g[0].toString());
+        Visualizacao viz[] = new Visualizacao[5];
+        viz[0] = new Visualizacao(g[0], v[2]);
+        viz[0].avaliar();
+        System.out.println(viz[0].toString());
+        viz[1] = new Visualizacao(g[0], v[1]);
+        viz[0].avaliar(87.0f);
+        System.out.println(viz[0].toString());
+        /*System.out.println(v[0].toString());
+        System.out.println(g[0].toString());*/
     }
 }
