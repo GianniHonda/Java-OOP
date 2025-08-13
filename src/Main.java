@@ -45,11 +45,11 @@ public class Main {
        System.out.println("Qual e a sua idade?");
        idade = entradaUsuario.nextByte();*/
 
-       int numero1 = 1;
-       int numero2 = 7;
+       int numero1 = 10;
+       int numero2 = 20;
 
        Scanner entradaUsuario = new Scanner(System.in);
 
-       System.out.println(numero1 % numero2);
+       System.out.println(numero1 <= numero2);
     }
 }
