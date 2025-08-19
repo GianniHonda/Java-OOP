@@ -53,7 +53,7 @@ public class Main {
         }
         */
 
-       byte idade;
+       /*byte idade;
 
        System.out.println("Qual e a sua idade?");
        Scanner entradaUsuario = new Scanner(System.in);
@@ -65,7 +65,23 @@ public class Main {
         System.out.println("Adolescente");
        }else {
         System.out.println("Adulto");
-       }
+       }*/
+
+       //Operadores logicos (|| e &&)
+
+        int numero1 = 10;
+        int numero2 = 20;
+        int numero3 = 30;
+        int numero4 = 40;
+
+        System.out.println("Digite o primeiro numero:");
+        Scanner entradaUsuario = new Scanner(System.in);
+
+        if (numero1 == numero2 && numero3 < numero4) {
+            System.out.println("Verdadeiro");
+        }else {
+            System.out.println("Falso");
+        }
 
        
     }
