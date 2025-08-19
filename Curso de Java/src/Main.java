@@ -33,7 +33,7 @@ public class Main {
        */
 
        /*Concatenacao */
-       String nome;
+       /*String nome;
        Byte idade;
        String profissao;
 
@@ -43,8 +43,30 @@ public class Main {
        System.out.println("Qual e a sua profissao?");
        profissao = entradaUsuario.nextLine();
        System.out.println("Qual e a sua idade?");
+       idade = entradaUsuario.nextByte();*/
+
+       /*
+        if(condicao){
+        Codigo que vai ser executado quando for verdadeiro
+        }else { false
+        Codigo que vai ser executado quando for falso
+        }
+        */
+
+       byte idade;
+
+       System.out.println("Qual e a sua idade?");
+       Scanner entradaUsuario = new Scanner(System.in);
        idade = entradaUsuario.nextByte();
+
+       if (idade <= 10) {
+        System.out.println("Crianca");
+       }else if (idade <= 17) {
+        System.out.println("Adolescente");
+       }else {
+        System.out.println("Adulto");
+       }
+
        
-       System.out.println("Meu nome e " + nome + " eu tenho " + idade + " anos" + " e sou " + profissao);
     }
 }
