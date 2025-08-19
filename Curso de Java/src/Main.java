@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -69,7 +70,7 @@ public class Main {
 
        //Operadores logicos (|| e &&)
 
-        int numero1 = 10;
+        /*int numero1 = 10;
         int numero2 = 20;
         int numero3 = 30;
         int numero4 = 40;
@@ -81,8 +82,17 @@ public class Main {
             System.out.println("Verdadeiro");
         }else {
             System.out.println("Falso");
-        }
+        }*/
 
+        //Arrays (Varios valores dentro de uma unica variavel)
+        String[] listaCompras = {"Banana","Carne","Ovos","Feijao","Arroz","Abacate","Batata"};
+        int[] sorteio = {10, 20, 30, 40, 50};
+        double[] valores = {10.50, 100.900, 99.98};
+        boolean[] estatus = {false,true,false}; 
+
+        Scanner entradaUsuario = new Scanner(System.in);
+
+        System.out.println(Arrays.toString(listaCompras));
        
     }
 }
