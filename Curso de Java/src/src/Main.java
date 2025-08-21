@@ -95,7 +95,7 @@ public class Main {
         System.out.println(Arrays.toString(listaCompras));*/
        
         //While (enquanto)
-        int indice = 0;
+        /*int indice = 0;
         String[] listaCompras = {"Banana","Carne","Ovos","Feijao","Arroz","Abacate","Batata"};
 
         Scanner entradaUsuario = new Scanner(System.in);
@@ -103,6 +103,15 @@ public class Main {
         while (listaCompras.length <= 7) {
             System.out.println(listaCompras[indice]);
             indice++;
+        }*/
+
+        //For (mais enxuto que o while)
+        String[] listaCompras = {"Banana","Carne","Ovos","Feijao","Arroz","Abacate","Batata"};
+
+        Scanner entradaUsuario = new Scanner(System.in);
+
+        for (int indice = 0; listaCompras.length <= 7; indice++){
+            System.out.println(listaCompras[indice]);
         }
     }
 }
