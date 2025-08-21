@@ -106,12 +106,45 @@ public class Main {
         }*/
 
         //For (mais enxuto que o while)
-        String[] listaCompras = {"Banana","Carne","Ovos","Feijao","Arroz","Abacate","Batata"};
+        /*String[] listaCompras = {"Banana","Carne","Ovos","Feijao","Arroz","Abacate","Batata"};
 
         Scanner entradaUsuario = new Scanner(System.in);
 
         for (int indice = 0; listaCompras.length <= 7; indice++){
             System.out.println(listaCompras[indice]);
+        }*/
+
+        //Switch
+        byte opcoesBanco;
+        
+        System.out.println("Escolha uma opcao: \n " +
+        "1 - Ver fatura do cartao \n " +
+        "2 - Saldo conta corrente \n " +
+        "3 - Poupanca \n " +
+        "4 - Cambio");
+
+        Scanner entradaUsuario = new Scanner(System.in);
+        opcoesBanco = entradaUsuario.nextByte();
+
+        switch (opcoesBanco){
+            case 1:
+            System.out.println("Ver fatura do cartao");
+            break;
+
+            case 2:
+            System.out.println("Saldo conta corrente");
+            break;
+
+            case 3:
+            System.out.println("Poupanca");
+            break;
+
+            case 4:
+            System.out.println("Cambio");
+            break;
+
+            default:
+            System.out.println("Nenhuma opcao selecionada");
         }
     }
 }
