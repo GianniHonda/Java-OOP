@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+import POO.Carro;
+
 public class Main {
     public static void main(String[] args) {
         //tipo de dado + identificacao + valor atribuido
@@ -115,7 +117,7 @@ public class Main {
         }*/
 
         //Switch
-        byte opcoesBanco;
+        /*byte opcoesBanco;
         
         System.out.println("Escolha uma opcao: \n " +
         "1 - Ver fatura do cartao \n " +
@@ -145,6 +147,13 @@ public class Main {
 
             default:
             System.out.println("Nenhuma opcao selecionada");
-        }
+        }*/
+
+        Carro carro = new Carro();
+        carro.setCor("Vermelho");
+        carro.setPlaca("BRA2E19");
+        carro.acelerar();
+
+        System.out.println("" + carro.getCor() + "\n" + carro.getPlaca());
     }
 }
