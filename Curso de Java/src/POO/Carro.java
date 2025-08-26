@@ -2,42 +2,15 @@ package POO;
 
 import POO.heranca.Veiculo;
 
-public class Carro extends Veiculo {
+public class Carro implements POO.interfaces.Veiculo{
 
-    public Carro(String cor, String placa) {
-        super(cor, placa);
+    @Override
+    public void acelerar(String texto) {
+        System.out.println(texto);
     }
 
-    private void marcha(){
-        System.out.println("Passando a primeira marcha.");
-    }
-
-    public void acessar(){
-        this.acelerar("Carro");
-        marcha();
-    }
-    //static String pais; //variavel de classes
-
-    /*public void paisDeOrigem(String pais){
-       this.pais = pais;
-       System.out.println("O pais de origem e " + pais); 
-    }*/
-
-    /*public String getCor() {
-        return cor;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
-
-    public String getPlaca() {
-        return placa;
-    }
-
-    public void setPlaca(String placa) {
-        this.placa = placa;
-    }*/
-
-    
+    @Override
+    public void frear(String texto) {
+        System.out.println(texto);
+    } 
 }

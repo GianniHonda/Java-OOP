@@ -2,9 +2,17 @@ package POO;
 
 import POO.heranca.Veiculo;
 
-public class Moto extends Veiculo {
+public class Moto implements POO.interfaces.Veiculo{
 
-    public Moto(String cor, String placa){
-        super(cor, placa);
+    @Override
+    public void acelerar(String texto) {
+        System.out.println(texto);
     }
+
+    @Override
+    public void frear(String texto) {
+        System.out.println(texto);
+    }
+
+    
 }
