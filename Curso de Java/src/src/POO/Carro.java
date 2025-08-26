@@ -2,12 +2,18 @@ package POO;
 
 public class Carro {
     //propriedades | atributos | campos | variaveis de instancia
-    String cor;
+    String cor; //variavel de instancia
     String placa;
+    static String pais; //variavel de classes
 
     public Carro(String cor, String placa) {
         this.cor = cor;
         this.placa = placa;
+    }
+
+    public void paisDeOrigem(String pais){
+       this.pais = pais;
+       System.out.println("O pais de origem e " + pais); 
     }
 
     public void detalhesCarro(){

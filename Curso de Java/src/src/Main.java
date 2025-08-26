@@ -148,10 +148,15 @@ public class Main {
             default:
             System.out.println("Nenhuma opcao selecionada");*/
 
-        Carro carro = new Carro("Azul", "BRA789");
-        carro.detalhesCarro();
-        carro.acelerar();
+        Carro carro1 = new Carro("Azul", "BRA789");
+        carro1.detalhesCarro();
+        carro1.acelerar();
 
-        System.out.println(carro);
+        Carro carro2 = new Carro("Rosa", "RIO078950");
+        carro2.detalhesCarro();
+        carro2.paisDeOrigem("Brasil");
+        carro2.abastecer();
+
+        System.out.println(carro1);
     }
 }
