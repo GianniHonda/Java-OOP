@@ -5,6 +5,15 @@ public class Carro {
     String cor;
     String placa;
 
+    public Carro(String cor, String placa) {
+        this.cor = cor;
+        this.placa = placa;
+    }
+
+    public void detalhesCarro(){
+        System.out.println("O carro tem a cor " + cor + " e o numero da placa e: " + placa);
+    }
+
     //Metodo - Comportamento do objeto, acoes
     public void acelerar(){
         System.out.println("Carro esta em movimento...");
@@ -18,7 +27,7 @@ public class Carro {
         System.out.println("O carro esta sendo abastecido com gasolina.");
     }
 
-    public String getCor() {
+    /*public String getCor() {
         return cor;
     }
 
@@ -32,7 +41,7 @@ public class Carro {
 
     public void setPlaca(String placa) {
         this.placa = placa;
-    }
+    }*/
 
     
 }

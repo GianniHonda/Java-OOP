@@ -146,14 +146,12 @@ public class Main {
             break;
 
             default:
-            System.out.println("Nenhuma opcao selecionada");
-        }*/
+            System.out.println("Nenhuma opcao selecionada");*/
 
-        Carro carro = new Carro();
-        carro.setCor("Vermelho");
-        carro.setPlaca("BRA2E19");
+        Carro carro = new Carro("Azul", "BRA789");
+        carro.detalhesCarro();
         carro.acelerar();
 
-        System.out.println("" + carro.getCor() + "\n" + carro.getPlaca());
+        System.out.println(carro);
     }
 }
