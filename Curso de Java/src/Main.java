@@ -1,6 +1,9 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+import POO.Carro;
+import POO.Moto;
+
 public class Main {
     public static void main(String[] args) {
         //tipo de dado + identificacao + valor atribuido
@@ -85,14 +88,88 @@ public class Main {
         }*/
 
         //Arrays (Varios valores dentro de uma unica variavel)
-        String[] listaCompras = {"Banana","Carne","Ovos","Feijao","Arroz","Abacate","Batata"};
+        /*String[] listaCompras = {"Banana","Carne","Ovos","Feijao","Arroz","Abacate","Batata"};
         int[] sorteio = {10, 20, 30, 40, 50};
         double[] valores = {10.50, 100.900, 99.98};
         boolean[] estatus = {false,true,false}; 
 
         Scanner entradaUsuario = new Scanner(System.in);
 
-        System.out.println(Arrays.toString(listaCompras));
+        System.out.println(Arrays.toString(listaCompras));*/
        
+        //While (enquanto)
+        /*int indice = 0;
+        String[] listaCompras = {"Banana","Carne","Ovos","Feijao","Arroz","Abacate","Batata"};
+
+        Scanner entradaUsuario = new Scanner(System.in);
+
+        while (listaCompras.length <= 7) {
+            System.out.println(listaCompras[indice]);
+            indice++;
+        }*/
+
+        //For (mais enxuto que o while)
+        /*String[] listaCompras = {"Banana","Carne","Ovos","Feijao","Arroz","Abacate","Batata"};
+
+        Scanner entradaUsuario = new Scanner(System.in);
+
+        for (int indice = 0; listaCompras.length <= 7; indice++){
+            System.out.println(listaCompras[indice]);
+        }*/
+
+        //Switch
+        /*byte opcoesBanco;
+        
+        System.out.println("Escolha uma opcao: \n " +
+        "1 - Ver fatura do cartao \n " +
+        "2 - Saldo conta corrente \n " +
+        "3 - Poupanca \n " +
+        "4 - Cambio");
+
+        Scanner entradaUsuario = new Scanner(System.in);
+        opcoesBanco = entradaUsuario.nextByte();
+
+        switch (opcoesBanco){
+            case 1:
+            System.out.println("Ver fatura do cartao");
+            break;
+
+            case 2:
+            System.out.println("Saldo conta corrente");
+            break;
+
+            case 3:
+            System.out.println("Poupanca");
+            break;
+
+            case 4:
+            System.out.println("Cambio");
+            break;
+
+            default:
+            System.out.println("Nenhuma opcao selecionada");*/
+
+        /*Carro carro1 = new Carro("Azul", "BRA789");
+        carro1.detalhesCarro();
+        carro1.acelerar();
+
+        Carro carro2 = new Carro("Rosa", "RIO078950");
+        carro2.detalhesCarro();
+        //carro2.paisDeOrigem("Brasil");
+        carro2.abastecer();
+
+        System.out.println(carro1);*/
+
+        Carro carro1 = new Carro("Azul", "BR7819");
+        carro1.detalhesVeiculo("Carro");
+        carro1.abastecer("Carro", "Alcool");
+
+        System.out.println("\n");
+
+        Moto moto1 = new Moto("Preto", "RIO9876");
+        moto1.frear("Moto");
+        moto1.detalhesVeiculo("Moto");
+
+        System.out.println();
     }
 }
