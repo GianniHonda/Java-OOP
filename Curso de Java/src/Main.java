@@ -160,7 +160,7 @@ public class Main {
 
         System.out.println(carro1);*/
 
-        Carro carro1 = new Carro("Azul", "BR7819");
+        /*Carro carro1 = new Carro("Azul", "BR7819");
         carro1.detalhesVeiculo("Carro");
         carro1.abastecer("Carro", "Alcool");
 
@@ -170,6 +170,18 @@ public class Main {
         moto1.frear("Moto");
         moto1.detalhesVeiculo("Moto");
 
-        System.out.println();
+        System.out.println();*/
+
+        //Modificadores de acesso
+        /*
+         public -> todas as classes terao acesso
+         private -> so pode ser acessado de dentro da classe
+         protected -> visivel somente em subclasses
+         */
+
+         Carro carro = new Carro("Azul", "BR3487");
+         carro.acessar();
+
+         System.out.println();
     }
 }

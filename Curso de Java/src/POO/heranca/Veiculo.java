@@ -16,7 +16,7 @@ public class Veiculo {
     }
 
     //Metodo - Comportamento do objeto, acoes
-    public void acelerar(String veiculo){
+    protected void acelerar(String veiculo){
         System.out.println("O(a) " + veiculo + " esta em movimento.");
     }
 

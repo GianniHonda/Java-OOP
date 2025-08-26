@@ -7,6 +7,15 @@ public class Carro extends Veiculo {
     public Carro(String cor, String placa) {
         super(cor, placa);
     }
+
+    private void marcha(){
+        System.out.println("Passando a primeira marcha.");
+    }
+
+    public void acessar(){
+        this.acelerar("Carro");
+        marcha();
+    }
     //static String pais; //variavel de classes
 
     /*public void paisDeOrigem(String pais){
